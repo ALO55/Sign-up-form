@@ -1,0 +1,9 @@
+@font-face {
+    font-family: bebas;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+body{
+    display: flexbox;
+    flex-direction: row;
+}
