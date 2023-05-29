@@ -1,9 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+
+.left-part{
+    background: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 150px;
+    background: rgba(5, 5, 5, 0.5);
+    margin-top: 20%;
+    text-align: center;
+    font-family: bebas;
+    font-size: 4.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 100%;
+    width: 130px;
+}
+
+.credits{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0px;
+}
+
 @font-face {
     font-family: bebas;
     src: url(fonts/BebasNeue-Regular.ttf);
-}
-
-body{
-    display: flexbox;
-    flex-direction: row;
 }
