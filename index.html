@@ -18,7 +18,7 @@
     <span class="credits">Photo by Pixabay on https://www.pexels.com/</span>
    </div>
 
-   <div class="form">
+   <div class="right-part">
     <header>
       <p>This is not real online service! This community is made to share the best routes 
         you can drive in the world!! You will see reviews, photos, and videos of the router along
@@ -29,44 +29,44 @@
 
     <main>
         <h1>Let's do this!</h1>
-        <form action="" method="get">
+        <form action="#" method="get">
             
             <div class="form-row">
                 <label for="first-name">First name</label>
-                <input type="text" id="first-name">
+                <input type="text" id="first-name" name="first-name" required>
             </div>
 
             <div class="form-row">
                 <label for="last-name">Last name</label>
-                <input type="text" id="last-name">
+                <input type="text" id="last-name" name="last-name" required>
             </div>
 
             <div class="form-row">
                 <label for="email">Email</label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email" required>
             </div>
 
             <div class="form-row">
-                <label for="phone">Phone number</label>
-                <input type="text" id="phone">
+                <label for="tel">Phone number</label>
+                <input type="tel" id="tel" min="10" max="10">
             </div>
 
             <div class="form-row">
                 <label for="password">Password</label>
-                <input type="password" id="password">
+                <input type="password" id="password" name="password" required>
             </div>
 
             <div class="form-row">
                 <label for="confirm-password">Confirm password</label>
-                <input type="password" id="confirm-password">
+                <input type="password" id="confirm-password" name="confirm-password" required>
             </div>
            
+            <button type="submit">Create account</button>
         </form>
     </main>
     
     <footer>
-        <button>Create account</button>
-        <p>Already have an account</p> <a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0">Log in</a>
+        <span>Already have an account?</span><a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0"> Log in</a>
     </footer>
    </div>
 
