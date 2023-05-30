@@ -29,7 +29,7 @@
 
     <main>
         <h1>Let's do this!</h1>
-        <form action="#" method="get">
+        <form action="#" method="get" id="my-form">
             
             <div class="form-row">
                 <label for="first-name">First name</label>
@@ -48,24 +48,25 @@
 
             <div class="form-row">
                 <label for="tel">Phone number</label>
-                <input type="tel" id="tel" min="10" max="10">
+                <input type="tel" id="tel" minlength="10" maxlength="10" title="Optional">
             </div>
 
             <div class="form-row">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" title="Please enter a password longer than 8 characters" 
+                required>
             </div>
 
             <div class="form-row">
                 <label for="confirm-password">Confirm password</label>
                 <input type="password" id="confirm-password" name="confirm-password" required>
             </div>
-           
-            <button type="submit">Create account</button>
+    
         </form>
     </main>
     
     <footer>
+        <div><button type="submit" form="my-form">Create account</button></div>
         <span>Already have an account?</span><a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0"> Log in</a>
     </footer>
    </div>

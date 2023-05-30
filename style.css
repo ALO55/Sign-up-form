@@ -8,6 +8,7 @@ body{
 }
 
 .left-part{
+    flex: 1 1 auto;
     background: url(images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,35 +51,39 @@ img{
 }
 
 .right-part{
+    flex: 1 1 auto;
     width: 100%;
     background-color: rgb(241, 241, 243);
+    display: flex;
+    flex-direction: column;
 }
 
 header{
-    width: 100%;
-    height: 35%;
-    padding-top: 80px;
+    flex: 1;
+    padding-top: 60px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 25px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     padding-left: 30px;
     padding-right: 100px;
 }
 
 main{
+    margin-top: 10px;
+    flex: 1;
     background-color:rgb(255, 251, 251);
-    width: 100%;
-    height: 35%;
     padding-left: 30px;
     padding-right: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 form{
     margin-top: 20px;
-    width: 65%;
+    width: 100%;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -94,12 +99,22 @@ input{
     font-size: 20px;
     padding: 5px;
     width: 350px;
+    border: 2px solid #000;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:valid{
+    border-color: green;
 }
 
 footer{
+    flex: 1;
     padding-left: 30px;
     padding-right: 100px;
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 button{
@@ -107,7 +122,6 @@ button{
     height: 40px;
     border-radius: 7px;
     font-size: 20px;
-    margin-top: 50px;
     margin-bottom: 20px;
     background-color: rgb(84, 90, 29);
     color: rgb(243, 243, 243);
